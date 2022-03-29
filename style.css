@@ -1,0 +1,342 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a{
+    font-size: 45px;
+    font-weight: 500;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #406882;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    border-bottom: 1px solid #84DFFF;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: 200px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.tombol-belanja {
+    background: #B4FE98;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #191A19;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tombol-belanja:hover {
+    background: #69DADB;
+    text-decoration: none;
+}
+
+.tombol-menu {
+    background: #B4FE98;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #191A19;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tombol-menu:hover {
+    background: #69DADB;
+    text-decoration: none;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#home img {
+    width: 50%;
+}
+
+.kolom {
+    margin-top: 120px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-weight: 500;
+    size: 60px;
+    margin: 25px 0px 20px 0px;
+    color: #FF865E;
+    width: 100%;
+    line-height: 50xp;
+}
+
+p {
+    margin: 25px 0px 10px 0px;
+    font-size: large;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sejarah img {
+    height: 50%;
+    margin-top: 100px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tampilan{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gambar {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.gambar img {
+    width: 200px;
+    height: 200px;
+}
+
+.gambar p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    size: 25px;
+    text-align: center;
+    color: brown;
+}
+
+.video {
+    width: 50%; 
+    margin: 0 auto;
+}
+
+.video iframe {
+    width: 470px;
+    height: 350px;
+}
+
+
+#tentang {
+    background: bisque;
+    padding: 50px 0px 50px 0px;  
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subfooter {
+    flex-basis: 45%;
+    margin: 25px;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #406882;
+    width: 100%;
+    line-height: 50px;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-weight: 500;
+    size: 60px;
+    margin: 25px 0px 20px 0px;
+    color: #FF865E;
+    width: 100%;
+    line-height: 50xp;
+}
+
+#galeri .gambar:hover {
+    border: 5px solid;
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+#produk .gambar {
+    margin: 6px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    float: center;
+    width: 220px;
+}
+
+.table {
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.table td, .table th {
+    text-align: center;
+    padding: 5px;
+}
+
+.table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 18px;
+}
+
+.table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.form {
+    margin: 30px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 25px;
+    text-align: left;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #B4FE98;
+    color: black;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .table {
+        display: block;
+        width: 100%;
+    }
+    
+}
