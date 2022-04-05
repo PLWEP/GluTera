@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GluTera</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <div class="wrapper">
             <div class="logo"><a href="#home">GluTera</a></div>
-            <div class="menu">
+            <div class="menu cf">
                 <ul>
                     <li><a href="#home">Beranda</a></li>
                     <li><a href="#sejarah">Sejarah</a></li>
@@ -25,81 +35,82 @@
         </div>
     </nav>
     <div class="wrapper">
-        <section id="home">
-            <img src="res\terrarium_menu.jfif" alt="Terarium"/>
-            <div class="kolom">
+        <div class="home" id="home">
+            <img src="../res/terrarium_menu.jfif" alt="terarium" class="gambarkonten">
+            <div class="kolom cf">
                 <h2>Apa itu Terarium??</h2>
                 <p>Terrarium adalah teknik mereplikasi mini suatu ekosistem di dalam sebuah wadah transparan yang terdiri dari elemen tanaman, mikroorganisme, dan mineral yang dihias menjadi bentuk taman mini yang menarik dan unik. Terarium juga dapat dikatakan sebagai biosfer buatan yang alami, hal ini dikarenakan yang terjadi di dalam terarium mirip dengan yang terjadi di alam. Namun yang membedakannya adalah perawatan serta media pertumbuhannya.</p>
             </div>
-        </section>
+        </div>
 
-        <section id="sejarah">
+        <div class="sejarah" id="sejarah">
             <div class="kolom">
                 <h2>Sejarah Terarium</h2>
                 <p>Terarium sudah lama dikenal sejak tahun 1827. Prinsip dasar dari terrarium diperkenalkan oleh seorang fisikawan dari London yang bernama Nathaniel B. Ward (1791-1868). Pada saat itu Ward sedang menempatkan pupa seekor ngengat sphinx dalam botol berisi tanah lembap. Beberapa hari kemudian, tumbuhan paku dan beberapa tumbuhan kecil mulai tumbuh dalam botol tersebut. Setelah di amati terjadi fenomena unik dalam botol tersebut, dimana ketika siang hari, air yang terdapat dalam botol menguap dan terkondensasi di permukaan botol, sedangkan pada malam hari, air mengalir kembali ke permukaan bawah di dalam botol. Fenomena ini kemudian dikenal dengan Wadah Wardian (Wardian Case).</p>
             </div>
-            <img src="res\wardiancase.png" alt="wardian case">
-        </section>
+            <img src="res\wardiancase.png" alt="wardian case" class="gambarkonten">
+        </div>
 
-        <section id="jenis-jenis">
-            <div class="tengah">
-                <div class="kolom">
-                    <h2>Jenis Jenis Terarium</h2>
-                </div>
-
-                <div class="tampilan">
-                    <div class="gambar">
-                        <img src="res\Jenis_terbuka.png" alt="Terarium Terbuka">
-                        <p>Terarium Terbuka</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Jenis_tertutup.jfif" alt="Terarium Tertutup">
-                        <p>Terarium Tertutup</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Jenis_binatang.jfif" alt="Terarium Binatang">
-                        <p>Terarium Binatang</p>
-                    </div>
-                </div>
+        <div class="jenis-jenis" id="jenis-jenis">
+            <div class="kolom">
+                <h2>Jenis Jenis Terarium</h2>
             </div>
-        </section>
 
-        <section id="buat">
-            <div class="tengah">
-                <div class="kolom">
-                    <h2>Cara Membuat Terarium</h2>
-                </div>
-                <div class="tampilan">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/gtkUQoUOgf8" title="Cara Membuat Terarium"></iframe>
-                    </div>
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/KNixld3rR2M" title="Cara Membuat Terarium"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div id="tentang">
-        <div class="wrapper">
-            <div class="footer">
-                <div class="subfooter">
-                    <h3>GluTera</h3>
-                    <p>Glutera adalah sebuah platform digital berbentuk web yang berisi serba-serbi dari terarium. Mulai dari
-                        pengenalan, sejarah, jenis-jenis, cara membuatnya dan cara merawatnya. Selain itu Glutera juga
-                        merupakan sebuah tempat menjual belikan terarium, baik terarium yang sudah jadi maupun terarium
-                        dasar. Serta bahan bahan dasar yang diperlukan untuk membuat terarium.</p>
-                </div>
-                <div class="subfooter">
-                    <h3>Kontak</h3>
+            <div class="tampilan">
+                <div class="gallery">
                     <ul>
-                        <li>111202013001@mhs.dinus.ac.id</li>
-                        <li>081392145954</li>
+                        <li>
+                            <img src="res\Jenis_terbuka.png" alt="Terarium Terbuka">
+                            <span>Terarium Terbuka</span>
+                        </li>
+                        <li>
+                            <img src="res\Jenis_tertutup.jfif" alt="Terarium Tertutup">
+                            <span>Terarium Tertutup</span>
+                        </li>
+                        <li>
+                            <img src="res\Jenis_binatang.jfif" alt="Terarium Binatang">
+                            <span>Terarium Binatang</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="pembuatan" id="buat">
+            <div class="kolom">
+                <h2>Cara Membuat Terarium</h2>
+            </div>
+            <div class="tampilan">
+                <div class="video">
+                    <ul>
+                        <li>
+                            <iframe src="https://www.youtube.com/embed/gtkUQoUOgf8" title="Cara Membuat Terarium"></iframe>
+                        </li>
+                        <li>
+                            <iframe src="https://www.youtube.com/embed/KNixld3rR2M" title="Cara Membuat Terarium"></iframe>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    <footer id="tentang">
+        <div class="wrapper">
+            <div class="tentang">
+                <h3>GluTera</h3>
+                    <p>Glutera adalah sebuah platform digital berbentuk web yang berisi serba-serbi dari terarium. Mulai dari
+                        pengenalan, sejarah, jenis-jenis, cara membuatnya dan cara merawatnya. Selain itu Glutera juga
+                        merupakan sebuah tempat menjual belikan terarium, baik terarium yang sudah jadi maupun terarium
+                        dasar. Serta bahan bahan dasar yang diperlukan untuk membuat terarium.</p>
+            </div>
+            <div class="kontak">
+                <h3>Kontak</h3>
+                <ul>
+                    <li>111202013001@mhs.dinus.ac.id</li>
+                    <li>081392145954</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

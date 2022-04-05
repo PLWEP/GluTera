@@ -2,16 +2,30 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+body { 
+    font-family: 'Quicksand', sans-serif;
 }
 
-body { 
-    margin: 0px;
-    padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h2 {
+    font-weight: bold;
+}
+
+p {
+    margin: 25px 0px 10px 0px;
+    font-size: large;
+    text-align: justify;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 30px;
+    color: #406882;
+}
+
+h1 {
+    font-weight: 500;
+    size: 60px;
+    color: #FF865E;
 }
 
 .wrapper {
@@ -24,8 +38,9 @@ body {
     font-size: 45px;
     font-weight: 500;
     float: left;
-    font-family: 'Courier New', Courier, monospace;
-    color: #406882;
+    font-family: 'Inconsolata', monospace;
+    color: greenyellow;
+    text-decoration: none;
 }
 
 .menu {
@@ -35,25 +50,23 @@ body {
 nav {
     width: 100%;
     margin: auto;
-    display: flex;
+    display: inline-block;
     line-height: 80px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: white;
     z-index: 1;
+    background: white;
     border-bottom: 1px solid #84DFFF;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
-nav ul li {
-    float: left;
+nav .menu ul li {
+    display: inline-block;
 }
 
 nav ul li a {
@@ -68,149 +81,146 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.tombol-belanja {
+.tombol-belanja, .tombol-menu {
     background: #B4FE98;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 20px;
-    padding: 15px 20px 15px 20px;
+    padding: 15px;
     color: #191A19;
     cursor: pointer;
+    box-sizing: border-box;
+}
+
+a.tombol-belanja:hover, a.tombol-menu:hover {
+    background: #69DADB;
+    text-decoration: none;
     font-weight: bold;
 }
 
-a.tombol-belanja:hover {
-    background: #69DADB;
-    text-decoration: none;
-}
-
-.tombol-menu {
-    background: #B4FE98;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 15px 20px 15px 20px;
-    color: #191A19;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-a.tombol-menu:hover {
-    background: #69DADB;
-    text-decoration: none;
-}
-
-section {
-    margin: auto;
+.home, .sejarah{
+    width: 100%;
+    margin: 20px auto;
     display: flex;
-    margin-bottom: 50px;
+    box-shadow: 0px 1px black;
 }
 
-#home img {
+.sejarah {
+    margin-top: 50px;
+    padding: 100px 0px;
+}
+
+.gambarkonten {
     width: 50%;
-}
-
-.kolom {
-    margin-top: 120px;
-    margin-bottom: 50px;
+    box-sizing: border-box;
     padding: 10px;
 }
 
-h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    font-weight: 500;
-    size: 60px;
-    margin: 25px 0px 20px 0px;
-    color: #FF865E;
-    width: 100%;
-    line-height: 50xp;
+.kolom {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-p {
-    margin: 25px 0px 10px 0px;
-    font-size: large;
-    text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#sejarah img {
-    height: 50%;
-    margin-top: 100px;
-}
-
-.tengah {
+.jenis-jenis {
     text-align: center;
     width: 100%;
+    margin-top: 30px;
+    padding: 100px 0px;
+    box-shadow: 0px 1px black;
 }
 
-.tampilan{
+.jenis-jenis .kolom h2, .pembuatan .kolom h2{
+    font-weight: bold;
+    font-size: 25px;
+    color: #FF865E;
     width: 100%;
+}
+
+.tampilan { 
+    display: inline-block;
+}
+
+.gallery li {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 3px solid rgb(82, 81, 81);
+    float: left;
+    margin: 5px 12px;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.gambar {
-    width: 20%;
-    margin: 0 auto;
-}
-
-.gambar img {
+.gallery li img {
     width: 200px;
     height: 200px;
 }
 
-.gambar p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 800;
-    size: 25px;
+.gallery li span {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(220, 220, 220, 0.9);
+    position: absolute;
+    top: 0;
     text-align: center;
-    color: brown;
+    line-height: 200px;
+    font-size: 15px;
+    color: black;
+    text-shadow: 1px 1px 1px gray;
+    opacity: 0;
+    transition: 300ms;
+    transform: scale(0);
 }
 
-.video {
-    width: 50%; 
-    margin: 0 auto;
+.gallery li:hover span{
+    opacity: 1;
+    transform: scale(1);
 }
 
-.video iframe {
-    width: 470px;
-    height: 350px;
+.pembuatan {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    padding: 100px 0px;
+    box-shadow: 0px 1px black;
+
 }
 
+.video li {
+    width: 500px;
+    float: left;
+}
 
-#tentang {
+.video li iframe {
+    width: 450px;
+    height: 300px;
+}
+
+footer {
+    border-top: 1px solid #84DFFF;
     background: bisque;
-    padding: 50px 0px 50px 0px;  
-}
-
-.footer {
+    margin-top: 50px;
+    padding: 30px 0px; 
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
 
-.subfooter {
-    flex-basis: 45%;
-    margin: 25px;
+footer .tentang, .kontak {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 800;
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #406882;
-    width: 100%;
-    line-height: 50px;
+footer .kontak {
+    float: right;
 }
 
-h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    font-weight: 500;
-    size: 60px;
-    margin: 25px 0px 20px 0px;
-    color: #FF865E;
-    width: 100%;
-    line-height: 50xp;
+footer .kontak ul {
+    margin: 10px 0;
+    list-style-type: circle;
+    padding-left: 20px;
 }
 
 #galeri .gambar:hover {
@@ -339,4 +349,19 @@ input[type=text], select {
         width: 100%;
     }
     
+}
+
+/* Clear Fix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
