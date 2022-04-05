@@ -28,6 +28,11 @@ h1 {
     color: #FF865E;
 }
 
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
 .wrapper {
     width: 1000px;
     margin: auto;
@@ -122,7 +127,12 @@ a.tombol-belanja:hover, a.tombol-menu:hover {
     box-sizing: border-box;
 }
 
-.jenis-jenis {
+.kolom h1 {
+    color: #000000;
+    font-size: 50px;
+}
+
+.jenis-jenis, .galeri, .produk, .member {
     text-align: center;
     width: 100%;
     margin-top: 30px;
@@ -130,7 +140,7 @@ a.tombol-belanja:hover, a.tombol-menu:hover {
     box-shadow: 0px 1px black;
 }
 
-.jenis-jenis .kolom h2, .pembuatan .kolom h2{
+.jenis-jenis .kolom h2, .pembuatan .kolom h2, .galeri .kolom h2, .produk .kolom h2, .member .kolom h2{
     font-weight: bold;
     font-size: 25px;
     color: #FF865E;
@@ -223,21 +233,13 @@ footer .kontak ul {
     padding-left: 20px;
 }
 
-#galeri .gambar:hover {
-    border: 5px solid;
-}
-
-h4 {
-    color: #555;
-    font-weight: normal;
-}
-
-#produk .gambar {
-    margin: 6px;
-    padding: 5px;
-    border: 2px solid #ccc;
-    float: center;
+.produk .gallery li {
     width: 220px;
+    height: 250px;
+}
+
+.produk .gallery li img {
+    margin: 15px 0px;
 }
 
 .table {
@@ -292,9 +294,9 @@ input[type=text], select {
     border: 1px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
-  input[type=submit] {
+input[type=submit] {
     width: 100%;
     background-color: #B4FE98;
     color: black;
@@ -302,11 +304,11 @@ input[type=text], select {
     margin: 8px 0;
     border: none;
     border-radius: 4px;
-  }
+}
 
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
-  }
+}
 
 @media screen and (max-width: 991.98px) {
     .wrapper {

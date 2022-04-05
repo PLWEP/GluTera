@@ -35,161 +35,150 @@
         </div>
     </nav>
     <div class="wrapper">
-        <section id="home">
+        <div class="home" id="home">
+            <img src="res\terrarium_belanja.jfif" alt="Terarium" class="gambarkonten">
             <div class="kolom">
                 <h1>Hiasi Rumah Anda dengan Koleksi dari Kami</h1>
             </div>
-            <img src="res\terrarium_belanja.jfif" alt="Terarium">
-        </section>
-         
-        <section id="galeri"> 
-            <div class="tengah">
-                <div class="kolom">
-                    <h2>Galeri</h2>
-                </div>
-                <div class="tampilan">
-                    <div class="gambar">
-                        <img src="res\galeri1.jfif" alt="Terarium">
-                    </div>
-                    <div class="gambar">
-                       <img src="res\galeri2.jfif" alt="Terarium">
-                    </div>
-                    <div class="gambar">
-                        <img src="res\galeri3.jfif" alt="Terarium">
-                    </div>
-                    <div class="gambar">
-                        <img src="res\galeri4.jfif" alt="Terarium">
-                   </div>
-                </div>  
+        </div>
+        <div class="galeri" id="galeri"> 
+            <div class="kolom">
+                <h2>Galeri</h2>
             </div>
-        </section>
-        
 
-        <section id="produk">
-            <div class="tengah">
-                <div class="kolom">
-                    <h2>Produk</h2>
-                </div>
-
-                <div class="tampilan">
-                    <div class="gambar">
-                        <img src="res\Produk1.png" alt="Terarium">
-                        <h4>Rumah Mini</h4>
-                        <p>Rp.50.000</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Produk2.png" alt="Terarium">
-                        <h4>Mobil Mini</h4>
-                        <p>Rp.30.000</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Produk3.png" alt="Terarium">
-                        <h4>Gantungan Telur</h4>
-                        <p>Rp.60.000</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Produk4.png" alt="Terarium">
-                        <h4>Pink Sukulen</h4>
-                        <p>Rp.40.000</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Produk5.png" alt="Terarium">
-                        <h4>Batu Kering</h4>
-                        <p>Rp.30.000</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Produk6.png" alt="Terarium">
-                        <h4>Herba</h4>
-                        <p>Rp.80.000</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Produk7.png" alt="Terarium">
-                        <h4>Kaktus Gantung</h4>
-                        <p>Rp.100.000</p>
-                    </div>
-                    <div class="gambar">
-                        <img src="res\Produk8.png" alt="Terarium">
-                        <h4>Pasir Putih</h4>
-                        <p>Rp.90.000</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="member">
-            <div class="tengah">
-                <div class="kolom">
-                    <h2>Bergabung dengan Member Kami dan Dapatkan Bonusnya</h2>
-                    <table class="table">
-                        <tr>
-                            <th>Paket</th>
-                            <th>Biaya</th>
-                            <th>Keuntungan</th>
-                        </tr>
-                        <tr>
-                            <td>1 Bulan</td>
-                            <td>Rp.50.000</td>
-                            <td>Voucer diskon 20%</td>
-                        </tr>
-                        <tr>
-                            <td>3 Bulan</td>
-                            <td>Rp.130.000</td>
-                            <td>Voucer diskon 50%+20%</td>
-                        </tr>
-                        <tr>
-                            <td>6 Bulan</td>
-                            <td>Rp.250.000</td>
-                            <td>Koleksi Ekslusif</td>
-                        </tr>
-                        <tr>
-                            <td>12 Bulan</td>
-                            <td>Rp.500.000</td>
-                            <td>Terarium Pribadi Khusus</td>
-                        </tr>
-                    </table>
-                    <div class="form">
-                        <form name="member" onsubmit="return validasi()" action="simpan.php">
-                            <label for="nama">Masukan Nama :</label>
-                            <input type="text" id="nama" name="nama" ><br>
-                            <label for="email">Email :</label>
-                            <input type="text" id="email" name="email"><br>
-                            <label for="email">Nomor Telepon :</label>
-                            <input type="text" id="telepon" name="telepon"><br>
-                            <label for="Paket">Paket</label>
-                            <select id="paket" name="paket">
-                                <option value="1">1 Bulan</option>
-                                <option value="3">3 Bulan</option>
-                                <option value="6">6 Bulan</option>
-                                <option value="12">12 Bulan</option>
-                            </select>
-                            <input type="submit" value="Submit" name="submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div id="tentang">
-        <div class="wrapper">
-            <div class="footer">
-                <div class="subfooter">
-                    <h3>GluTera</h3>
-                    <p>Glutera adalah sebuah platform digital berbentuk web yang berisi serba-serbi dari terarium. Mulai dari
-                        pengenalan, sejarah, jenis-jenis, cara membuatnya dan cara merawatnya. Selain itu Glutera juga
-                        merupakan sebuah tempat menjual belikan terarium, baik terarium yang sudah jadi maupun terarium
-                        dasar. Serta bahan bahan dasar yang diperlukan untuk membuat terarium.</p>
-                </div>
-                <div class="subfooter">
-                    <h3>Kontak</h3>
+            <div class="tampilan">
+                <div class="gallery">
                     <ul>
-                        <li>111202013001@mhs.dinus.ac.id</li>
-                        <li>081392145954</li>
+                        <li>
+                            <img src="res\galeri1.jfif" alt="Terarium">
+                        </li>
+                        <li>
+                            <img src="res\galeri2.jfif" alt="Terarium">
+                        </li>
+                        <li>
+                            <img src="res\galeri3.jfif" alt="Terarium">
+                        </li>
+                        <li>
+                            <img src="res\galeri4.jfif" alt="Terarium">
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <div class="produk" id="produk">
+            <div class="kolom">
+                <h2>Produk</h2>
+            </div>
+
+            <div class="tampilan">
+                <div class="gallery">
+                    <ul>
+                        <li>
+                            <img src="res\Produk1.png" alt="Terarium">
+                            <h4>Rumah Mini</h4>
+                        </li>
+                        <li>
+                            <img src="res\Produk2.png" alt="Terarium">
+                            <h4>Mobil Mini</h4>
+                        </li>
+                        <li>
+                            <img src="res\Produk3.png" alt="Terarium">
+                            <h4>Gantungan Telur</h4>
+                        </li>
+                        <li>
+                            <img src="res\Produk4.png" alt="Terarium">
+                            <h4>Pink Sukulen</h4>
+                        </li>
+                        <li>
+                            <img src="res\Produk5.png" alt="Terarium">
+                            <h4>Batu Kering</h4>
+                        </li>
+                        <li>
+                            <img src="res\Produk6.png" alt="Terarium">
+                            <h4>Herba</h4>
+                        </li>
+                        <li>
+                            <img src="res\Produk7.png" alt="Terarium">
+                            <h4>Kaktus Gantung</h4>
+                        </li>
+                        <li>
+                            <img src="res\Produk8.png" alt="Terarium">
+                            <h4>Pasir Putih</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="member" id="member">
+            <div class="kolom">
+                <h2>Bergabung dengan Member Kami dan Dapatkan Bonusnya</h2>
+                <table class="table">
+                    <tr>
+                        <th>Paket</th>
+                        <th>Biaya</th>
+                        <th>Keuntungan</th>
+                    </tr>
+                    <tr>
+                        <td>1 Bulan</td>
+                        <td>Rp.50.000</td>
+                        <td>Voucer diskon 20%</td>
+                    </tr>
+                    <tr>
+                        <td>3 Bulan</td>
+                        <td>Rp.130.000</td>
+                        <td>Voucer diskon 50%+20%</td>
+                    </tr>
+                    <tr>
+                        <td>6 Bulan</td>
+                        <td>Rp.250.000</td>
+                        <td>Koleksi Ekslusif</td>
+                    </tr>
+                    <tr>
+                        <td>12 Bulan</td>
+                        <td>Rp.500.000</td>
+                        <td>Terarium Pribadi Khusus</td>
+                    </tr>
+                </table>
+                <div class="form">
+                    <form name="member" onsubmit="return validasi()" action="simpan.php">
+                        <label for="nama">Masukan Nama :</label>
+                        <input type="text" id="nama" name="nama" ><br>
+                        <label for="email">Email :</label>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="email">Nomor Telepon :</label>
+                        <input type="text" id="telepon" name="telepon"><br>
+                        <label for="Paket">Paket</label>
+                        <select id="paket" name="paket">
+                            <option value="1">1 Bulan</option>
+                            <option value="3">3 Bulan</option>
+                            <option value="6">6 Bulan</option>
+                            <option value="12">12 Bulan</option>
+                        </select>
+                        <input type="submit" value="Submit" name="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
-    
+    <footer id="tentang">
+        <div class="wrapper">
+            <div class="tentang">
+                <h3>GluTera</h3>
+                    <p>Glutera adalah sebuah platform digital berbentuk web yang berisi serba-serbi dari terarium. Mulai dari
+                        pengenalan, sejarah, jenis-jenis, cara membuatnya dan cara merawatnya. Selain itu Glutera juga
+                        merupakan sebuah tempat menjual belikan terarium, baik terarium yang sudah jadi maupun terarium
+                        dasar. Serta bahan bahan dasar yang diperlukan untuk membuat terarium.</p>
+            </div>
+            <div class="kontak">
+                <h3>Kontak</h3>
+                <ul>
+                    <li>111202013001@mhs.dinus.ac.id</li>
+                    <li>081392145954</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
